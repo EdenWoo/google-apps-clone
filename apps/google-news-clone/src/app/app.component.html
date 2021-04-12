@@ -1,6 +1,6 @@
-<div *ngIf='!(isMobile$ | async); else isMobile' class='h-full overflow-hidden'>
+<div *ngIf='!(isMobile$ | async); else isMobile' class='h-full overflow-hidden mat-app-background'>
   <ng-container>
-    <app-header [sidenav]='sidenav'></app-header>
+    <app-header (darkModeActivate)='darkModeActivate($event)' [sidenav]='sidenav'></app-header>
     <mat-sidenav #sidenav mode='side' opened *ngIf='!(mdDevice$ | async)' class='mt-20'>
       <app-side-menu></app-side-menu>
     </mat-sidenav>

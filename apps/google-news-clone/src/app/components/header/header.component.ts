@@ -1,4 +1,4 @@
-import { Component, HostBinding, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, HostBinding, Input, OnInit, Output } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
 import { SCREEN_SM_MAX } from '../../configs/breakpoints.config';
 import { map } from 'rxjs/operators';
@@ -13,8 +13,8 @@ import { OverlayContainer } from '@angular/cdk/overlay';
 })
 export class HeaderComponent implements OnInit {
   toggleControl = new FormControl(false);
-  @HostBinding('class') className = '';
   @Input() sidenav: MatSidenav;
+  @Output() darkModeActivate = new EventEmitter();
 
   isMobile$ = this.breakpointObserver.observe(`(max-width: ${SCREEN_SM_MAX}px)`).pipe(map(breakpoint => breakpoint.matches));
 
@@ -23,13 +23,7 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     this.toggleControl.valueChanges.subscribe((darkMode) => {
-      const darkClassName = 'darkMode';
-      this.className = darkMode ? darkClassName : '';
-      if (darkMode) {
-        this.overlay.getContainerElement().classList.add(darkClassName);
-      } else {
-        this.overlay.getContainerElement().classList.remove(darkClassName);
-      }
+      this.darkModeActivate.emit(darkMode);
     });
   }
 
