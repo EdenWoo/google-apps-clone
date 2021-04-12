@@ -1,4 +1,4 @@
-<div *ngIf='!(isMobile$ | async); else isMobile'>
+<div *ngIf='!(isMobile$ | async); else isMobile' class='h-full overflow-hidden'>
   <ng-container>
     <app-header [sidenav]='sidenav'></app-header>
     <mat-sidenav #sidenav mode='side' opened *ngIf='!(mdDevice$ | async)' class='mt-20'>
