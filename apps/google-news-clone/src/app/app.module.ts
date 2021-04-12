@@ -32,6 +32,9 @@ import { LogoTextComponent } from './components/logo-text/logo-text.component';
 import { SpotlightItemComponent } from './components/spotlight-item/spotlight-item.component';
 import { MatTabsModule } from "@angular/material/tabs";
 import { CovidComponent } from './pages/covid/covid.component';
+import { MatDividerModule } from "@angular/material/divider";
+import { TopicCardComponent } from './components/topic-card/topic-card.component';
+import { AvatarModule } from "ngx-avatar";
 
 @NgModule({
   declarations: [
@@ -51,7 +54,8 @@ import { CovidComponent } from './pages/covid/covid.component';
     HeadlineExpansionComponent,
     LogoTextComponent,
     SpotlightItemComponent,
-    CovidComponent
+    CovidComponent,
+    TopicCardComponent
   ],
   imports: [
     BrowserModule,
@@ -71,6 +75,8 @@ import { CovidComponent } from './pages/covid/covid.component';
     MatInputModule,
     MatExpansionModule,
     MatTabsModule,
+    MatDividerModule,
+    AvatarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
