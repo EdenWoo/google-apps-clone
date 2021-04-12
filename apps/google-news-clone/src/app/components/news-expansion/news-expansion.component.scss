@@ -1,0 +1,22 @@
+.view {
+  color: #1967d2;
+}
+
+
+.mat-expansion-panel {
+  display: flex !important;
+  flex-direction: column;
+}
+
+.mat-expansion-panel-header {
+  order: 2;
+}
+
+::ng-deep .mat-expansion-panel-body, ::ng-deep .mat-expansion-panel-header {
+  padding-left: unset !important;
+  padding-right: 4px;
+
+  &:hover {
+    background: unset !important;
+  }
+}

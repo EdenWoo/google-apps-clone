@@ -1,0 +1,39 @@
+<div class="flex">
+  <div class="flex">
+    <div class="m-auto news-subtitle">
+      <span>Newshub</span>
+      <span> 2 days ago</span>
+    </div>
+  </div>
+  <div class="actions flex">
+    <div class="m-auto">
+      <button mat-icon-button class="icon-button-small">
+        <mat-icon class="mat-18">turned_in_not</mat-icon>
+      </button>
+      <button mat-icon-button class="icon-button-small">
+        <mat-icon>share</mat-icon>
+      </button>
+      <button mat-icon-button class="icon-button-small" [matMenuTriggerFor]="moreMenu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #moreMenu="matMenu">
+        <button mat-menu-item>
+          <mat-icon class="mat-18">link</mat-icon>
+          Go to stuff
+        </button>
+        <button mat-menu-item>
+          <mat-icon class="mat-18">stop</mat-icon>
+          Hide story from Stuff
+        </button>
+        <button mat-menu-item>
+          <mat-icon class="mat-18">thumb_up</mat-icon>
+          More stories like this
+        </button>
+        <button mat-menu-item>
+          <mat-icon class="mat-18">thumb_down</mat-icon>
+          Fewer stories like this
+        </button>
+      </mat-menu>
+    </div>
+  </div>
+</div>

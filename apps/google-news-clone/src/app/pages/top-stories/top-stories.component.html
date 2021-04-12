@@ -1,0 +1,26 @@
+<div class="flex flex-wrap">
+  <div class="lt-md:w-full gt-md:w-2/3">
+    <div class="flex justify-between my-8">
+      <span class="text-black text-xl">Headings</span>
+      <span class="color-primary">More Headlines</span>
+    </div>
+
+    <app-headline-simple></app-headline-simple>
+    <app-headline-expansion></app-headline-expansion>
+    <app-headline></app-headline>
+    <app-headline-expansion></app-headline-expansion>
+    <app-headline></app-headline>
+  </div>
+
+  <div class="lt-md:w-full gt-md:w-1/3 gt-md:p-8 gt-md:mt-4">
+    <div class="spotlight p-4">
+      <h2>
+        Spotlight
+      </h2>
+
+      <ng-container *ngFor="let spotlight of spotlights">
+        <app-spotlight-item [item]="spotlight"></app-spotlight-item>
+      </ng-container>
+    </div>
+  </div>
+</div>

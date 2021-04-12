@@ -1,0 +1,12 @@
+<div class="flex mt-4">
+  <div [className]="item.img? 'w-4/5' : 'w-full'">
+    <h4 class="hover:underline cursor-pointer">{{item.title}}</h4>
+    <app-source></app-source>
+  </div>
+  <div class="w-1/5 flex" *ngIf="item.img">
+    <img
+      class="m-auto w-full rounded-lg"
+      [src]="item.img"
+      alt="">
+  </div>
+</div>

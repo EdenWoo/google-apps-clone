@@ -1,0 +1,11 @@
+@import '~@angular/material/theming';
+
+.spotlight {
+  background-color: rgb(248, 249, 250);
+
+  h2 {
+    color: #5F6368;
+    padding: 13px 0;
+    border-bottom: 1px solid #dadce0
+  }
+}

@@ -1,0 +1,22 @@
+<div class="sidenav">
+  <div *ngIf="isMobile$ | async">
+    <div class="flex flex-row-reverse p-2 bg-gray-300 h-full">
+      <button mat-icon-button>
+        <mat-icon class="mat-18">apps</mat-icon>
+      </button>
+    </div>
+    <div class="p-2 my-2">
+      <app-logo-text></app-logo-text>
+    </div>
+  </div>
+  <mat-nav-list>
+    <a mat-list-item
+       *ngFor="let nav of navs"
+       class="sidenav__link"
+       [routerLink]="[nav.link]"
+       [routerLinkActive]="['active', 'accent']">
+      <mat-icon class="mr-4">{{nav?.icon}}</mat-icon>
+      <div class="sidenav__name">{{ nav?.name }} </div>
+    </a>
+  </mat-nav-list>
+</div>

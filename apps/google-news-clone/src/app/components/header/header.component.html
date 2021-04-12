@@ -1,0 +1,44 @@
+<mat-toolbar class="header flex mat-elevation-z8">
+  <div class="flex-none flex">
+    <button
+      (click)="sidenav.toggle()"
+      type="button"
+      aria-label="Toggle sidenav"
+      mat-icon-button>
+      <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+    </button>
+
+    <app-logo-text></app-logo-text>
+  </div>
+
+  <ng-container *ngIf="isMobile$ | async as isMobile; else notMobile">
+    <div class="flex-grow flex">
+    </div>
+
+    <div class="flex-none">
+      <button mat-icon-button>
+        <mat-icon class="mat-18">search</mat-icon>
+      </button>
+      <button mat-icon-button>
+        <mat-icon class="mat-18">account_circle</mat-icon>
+      </button>
+    </div>
+  </ng-container>
+
+  <ng-template #notMobile>
+    <div class="flex-grow flex">
+      <div class="m-auto w-1/2">
+        <app-header-search></app-header-search>
+      </div>
+    </div>
+
+    <div class="flex-none">
+      <button mat-icon-button>
+        <mat-icon class="mat-18">apps</mat-icon>
+      </button>
+      <button mat-icon-button>
+        <mat-icon class="mat-18">account_circle</mat-icon>
+      </button>
+    </div>
+  </ng-template>
+</mat-toolbar>

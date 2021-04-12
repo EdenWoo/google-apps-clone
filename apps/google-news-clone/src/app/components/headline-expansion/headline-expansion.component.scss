@@ -1,0 +1,15 @@
+@import '~@angular/material/theming';
+
+.headline-expansion {
+  border: 1px solid rgb(218, 220, 224);
+  border-radius: 8px;
+  padding: 20px;
+
+  &:hover {
+    @include mat-elevation(4);
+  }
+
+  &--link {
+    color: #1a73e8;
+  }
+}
