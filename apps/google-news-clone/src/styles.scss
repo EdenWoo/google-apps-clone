@@ -2,6 +2,7 @@
 @import "styles/tailwind";
 @import '~@angular/material/theming';
 @import "styles/material-override";
+@import "styles/app.theme";
 
 html, body {
   height: 100%;
