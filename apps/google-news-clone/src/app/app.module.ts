@@ -30,6 +30,8 @@ import {NewsItemComponent} from './components/news-item/news-item.component';
 import {HeadlineExpansionComponent} from './components/headline-expansion/headline-expansion.component';
 import { LogoTextComponent } from './components/logo-text/logo-text.component';
 import { SpotlightItemComponent } from './components/spotlight-item/spotlight-item.component';
+import { MatTabsModule } from "@angular/material/tabs";
+import { CovidComponent } from './pages/covid/covid.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +50,8 @@ import { SpotlightItemComponent } from './components/spotlight-item/spotlight-it
     NewsItemComponent,
     HeadlineExpansionComponent,
     LogoTextComponent,
-    SpotlightItemComponent
+    SpotlightItemComponent,
+    CovidComponent
   ],
   imports: [
     BrowserModule,
@@ -66,7 +69,8 @@ import { SpotlightItemComponent } from './components/spotlight-item/spotlight-it
     MatAutocompleteModule,
     MatFormFieldModule,
     MatInputModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatTabsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

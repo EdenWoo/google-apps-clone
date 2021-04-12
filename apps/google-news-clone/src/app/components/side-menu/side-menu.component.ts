@@ -20,6 +20,7 @@ export class SideMenuComponent {
     {name: 'For you', link: 'for-you', icon: 'person_outline'},
     {name: 'Following', link: 'following', icon: 'star_border'},
     {name: 'Saved searched', link: 'saved-search', icon: 'search'},
+    {name: 'Covid-19', link: 'covid-19', icon: 'shield'},
   ];
 
   isMobile$ = this.breakpointObserver.observe(`(max-width: ${SCREEN_SM_MAX}px)`).pipe(map(breakpoint => breakpoint.matches));

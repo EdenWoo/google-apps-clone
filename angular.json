@@ -39,13 +39,16 @@
       "prefix": "sirius",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-builders/custom-webpack:browser",
           "options": {
             "outputPath": "dist/apps/google-news-clone",
             "index": "apps/google-news-clone/src/index.html",
             "main": "apps/google-news-clone/src/main.ts",
             "polyfills": "apps/google-news-clone/src/polyfills.ts",
             "tsConfig": "apps/google-news-clone/tsconfig.app.json",
+            "customWebpackConfig": {
+              "path": "webpack.config.js"
+            },
             "aot": true,
             "assets": [
               "apps/google-news-clone/src/favicon.ico",
@@ -88,7 +91,7 @@
           }
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "builder": "@angular-builders/custom-webpack:dev-server",
           "options": {
             "browserTarget": "google-news-clone:build"
           },
@@ -114,11 +117,14 @@
           }
         },
         "test": {
-          "builder": "@nrwl/jest:jest",
+          "builder": "@angular-builders/custom-webpack:browser",
           "outputs": ["coverage/apps/google-news-clone"],
           "options": {
             "jestConfig": "apps/google-news-clone/jest.config.js",
-            "passWithNoTests": true
+            "passWithNoTests": true,
+            "customWebpackConfig": {
+              "path": "webpack.config.js"
+            }
           }
         }
       }
