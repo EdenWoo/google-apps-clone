@@ -1,15 +1,15 @@
-<div *ngIf="!(isMobile$ | async); else isMobile">
+<div *ngIf='!(isMobile$ | async); else isMobile'>
   <ng-container>
-    <app-header [sidenav]="sidenav"></app-header>
-    <mat-sidenav #sidenav mode="side" opened *ngIf="!(mdDevice$ | async)" class="mt-20">
+    <app-header [sidenav]='sidenav'></app-header>
+    <mat-sidenav #sidenav mode='side' opened *ngIf='!(mdDevice$ | async)' class='mt-20'>
       <app-side-menu></app-side-menu>
     </mat-sidenav>
-    <mat-sidenav-container class="sidenav-container">
-      <mat-sidenav *ngIf="mdDevice$ | async" #sidenav mode="side" opened class="mt-4">
+    <mat-sidenav-container class='sidenav-container'>
+      <mat-sidenav *ngIf='mdDevice$ | async' #sidenav mode='side' opened class='mt-4'>
         <app-side-menu></app-side-menu>
       </mat-sidenav>
-      <mat-sidenav-content class="flex bg-white">
-        <div class="main-content mx-auto">
+      <mat-sidenav-content class='flex bg-white'>
+        <div class='main-content mx-auto'>
           <router-outlet></router-outlet>
         </div>
       </mat-sidenav-content>
@@ -23,8 +23,8 @@
       <app-side-menu></app-side-menu>
     </mat-sidenav>
     <mat-sidenav-content>
-      <app-header [sidenav]="sidenav"></app-header>
-      <div class="main-content">
+      <app-header [sidenav]='sidenav'></app-header>
+      <div class='main-content lt-md:mt-8'>
         <router-outlet></router-outlet>
       </div>
     </mat-sidenav-content>
