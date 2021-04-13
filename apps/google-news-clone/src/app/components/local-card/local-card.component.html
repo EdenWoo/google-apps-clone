@@ -2,10 +2,12 @@
   <div class="flex justify-center">
     <div class="flex h-16">
       <div class="local-avatar">
-        <img src="https://lh5.googleusercontent.com/proxy/fz_nRcvaNxzI8eF2uR0f6qDItPvGAsrRSzBPoWbehf87bgUFHDY4Em8hXS9ESs9BvkMQ9nDH3YHmlqnYoETxDZBL-BQuGRiXixJwdmcj83Hcm2P_jlcH8fDjljgdr-AP03Ln6vmHr-bQLGTQ7h3hJIss9kQJKGlUyRupBC56HiHufzo=p-rw" alt="">
+        <img class="rounded"
+             [src]="imgAuckland"
+             alt="">
       </div>
-      <div class="m-auto text-center ">
-        <span>Auckland</span>
+      <div class="m-auto text-center">
+        <span ngModel>{{cityName.fields[0].val}}</span>
       </div>
     </div>
     <div class="menu-icon ml-5 mt-3">
