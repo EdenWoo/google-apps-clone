@@ -41,14 +41,26 @@
         Saved Searches
       </ng-template>
       <!--Tab inner body edit from here-->
-
+      <div class="save-search-border">
+        <div class="pb-3"></div>
+          <img [src]="saveSearchImg" alt="" class="saveSearchImg">
+        <div class="description">
+          Your saved searches will appear here.
+        </div>
+      </div>
     </mat-tab>
     <mat-tab label="Saved Stories">
       <ng-template mat-tab-label>
         Saved Stories
       </ng-template>
       <!--Tab inner body edit from here-->
-
+      <div class="save-search-border">
+        <div class="pb-3"></div>
+        <img [src]="imgList.fields[1].val" alt="" class="saveSearchImg">
+        <div class="description">
+          Your saved stories will appear here.
+        </div>
+      </div>
     </mat-tab>
   </mat-tab-group>
 </div>
