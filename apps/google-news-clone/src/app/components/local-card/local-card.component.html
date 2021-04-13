@@ -1,0 +1,23 @@
+<div class="local-card-headline cursor-pointer bg-white w-10/12">
+  <div class="flex justify-center">
+    <div class="flex h-16">
+      <div class="local-avatar">
+        <img src="https://lh5.googleusercontent.com/proxy/fz_nRcvaNxzI8eF2uR0f6qDItPvGAsrRSzBPoWbehf87bgUFHDY4Em8hXS9ESs9BvkMQ9nDH3YHmlqnYoETxDZBL-BQuGRiXixJwdmcj83Hcm2P_jlcH8fDjljgdr-AP03Ln6vmHr-bQLGTQ7h3hJIss9kQJKGlUyRupBC56HiHufzo=p-rw" alt="">
+      </div>
+      <div class="m-auto text-center ">
+        <span>Auckland</span>
+      </div>
+    </div>
+    <div class="menu-icon ml-5 mt-3">
+      <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <mat-icon>delete</mat-icon>
+          <span>Delete</span>
+        </button>
+      </mat-menu>
+    </div>
+  </div>
+</div>

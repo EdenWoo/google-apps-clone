@@ -1,6 +1,6 @@
 @import '~@angular/material/theming';
 
-.topic-card-headline {
+.local-card-headline {
   border: 1px solid rgb(218, 220, 224);
   border-radius: 8px;
   padding: 20px;
@@ -9,6 +9,9 @@
     @include mat-elevation(2);
   }
 }
-.menu-icon{
+.local-avatar{
+  margin-left: 12px;
+  width: 70px;
+  height: 70px;
 
-}
+ }

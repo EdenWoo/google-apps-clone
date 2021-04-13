@@ -35,6 +35,8 @@ import { CovidComponent } from './pages/covid/covid.component';
 import { MatDividerModule } from "@angular/material/divider";
 import { TopicCardComponent } from './components/topic-card/topic-card.component';
 import { AvatarModule } from "ngx-avatar";
+import { HttpClientModule } from "@angular/common/http";
+import { LocalCardComponent } from "./components/local-card/local-card.component";
 
 @NgModule({
   declarations: [
@@ -55,7 +57,8 @@ import { AvatarModule } from "ngx-avatar";
     LogoTextComponent,
     SpotlightItemComponent,
     CovidComponent,
-    TopicCardComponent
+    TopicCardComponent,
+    LocalCardComponent,
   ],
   imports: [
     BrowserModule,
@@ -76,6 +79,7 @@ import { AvatarModule } from "ngx-avatar";
     MatExpansionModule,
     MatTabsModule,
     MatDividerModule,
+    HttpClientModule,
     AvatarModule,
   ],
   providers: [],
