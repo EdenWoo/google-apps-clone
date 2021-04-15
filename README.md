@@ -4,7 +4,7 @@
 
 This project contains [google news](https://news.google.com/) clone and planning to add some more project 
 
-## [Demo](https://edenwoo.github.io/google-apps-clone/top-stories)
+## [Google News Clone Demo](https://edenwoo.github.io/google-apps-clone/top-stories)
 
 ## Libs used
 - Angular(V11)
