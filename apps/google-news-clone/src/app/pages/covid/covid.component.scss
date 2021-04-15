@@ -1,0 +1,35 @@
+.header-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  //overflow: hidden;
+}
+
+.header-left {
+  font-family: 'Google Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1.75rem;
+
+  span {
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+}
+
+.header-right {
+  padding-left: 9px;
+  padding-right: 9px;
+  min-height: 2rem;
+  min-width: 2rem;
+}
+.header-right-icon{
+  padding-right: 3px;
+  display: inline;
+  color: #1a73e8;
+  height: 16px;
+  width: 16px;
+}

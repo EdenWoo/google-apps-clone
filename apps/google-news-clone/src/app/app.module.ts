@@ -37,6 +37,7 @@ import { TopicCardComponent } from './components/topic-card/topic-card.component
 import { AvatarModule } from "ngx-avatar";
 import { HttpClientModule } from "@angular/common/http";
 import { LocalCardComponent } from "./components/local-card/local-card.component";
+import { TopNewsComponent } from './components/top-news/top-news.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +60,7 @@ import { LocalCardComponent } from "./components/local-card/local-card.component
     CovidComponent,
     TopicCardComponent,
     LocalCardComponent,
+    TopNewsComponent,
   ],
   imports: [
     BrowserModule,
