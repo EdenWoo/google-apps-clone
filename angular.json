@@ -51,7 +51,10 @@
               "apps/google-news-clone/src/favicon.ico",
               "apps/google-news-clone/src/assets"
             ],
-            "styles": ["./node_modules/@angular/material/prebuilt-themes/indigo-pink.css", "apps/google-news-clone/src/styles.scss"],
+            "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "apps/google-news-clone/src/styles.scss"
+            ],
             "stylePreprocessorOptions": {
               "includePaths": ["apps/google-news-clone/src/styles"]
             },
@@ -145,6 +148,31 @@
           "builder": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": ["apps/google-news-clone-e2e/**/*.{js,ts}"]
+          }
+        }
+      }
+    },
+    "sirius": {
+      "projectType": "library",
+      "root": "libs/sirius",
+      "sourceRoot": "libs/sirius/src",
+      "prefix": "sirius",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/sirius/src/**/*.ts",
+              "libs/sirius/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/sirius"],
+          "options": {
+            "jestConfig": "libs/sirius/jest.config.js",
+            "passWithNoTests": true
           }
         }
       }
