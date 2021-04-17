@@ -1,16 +1,39 @@
-<div class="headline-expansion flex-col cursor-pointer bg-white mt-4">
-  <div class="flex">
-    <div class="w-5/6 pr-8 flex-col justify-between">
-      <app-news-item></app-news-item>
-      <app-news-sub-item></app-news-sub-item>
-      <app-news-sub-item></app-news-sub-item>
-    </div>
-    <div class="w-1/6">
-      <img
-        class="m-auto w-full rounded-lg"
-        src="https://lh6.googleusercontent.com/proxy/1FwIiZOZlT_tLliQuCMho1uJKbQuJrhu0ogzWVQYkvAa9_z7eu4fpFpnQY84n6G0IInXrIRasTK7ZA4UchmPw_04hqmPc8BhsNwd2JxGWnDDAK9nHoUqDA3BbQmD4p0sVRwZvNtdms-iv7nIVwVkyLeh3B0HIwrep-AWCkFeH-MMrn0-QuXNzFSP81rbtm3icyw_Zel_c8zdziCrBRoXcWZMZc5Ds8jp=-p-df-h100-w100-rw"
-        alt="">
+<div class="border-2 rounded-lg p-4">
+  <div>
+    <div class="headline flex cursor-pointer mt-4">
+      <div class="w-5/6 pr-8">
+        <app-news-sub-item></app-news-sub-item>
+        <app-news-sub-item></app-news-sub-item>
+        <div *ngIf="!collapsed" @expandCollapse>
+          <app-news-sub-item></app-news-sub-item>
+          <app-news-sub-item></app-news-sub-item>
+          <app-news-sub-item></app-news-sub-item>
+        </div>
+      </div>
+      <div class="w-1/6">
+        <img
+          class="m-auto w-full rounded-lg"
+          src="https://lh4.googleusercontent.com/proxy/-7Ea7wMpXp_zQgZVoeQMWTchBmDoQ17xTU7g3QDMnEZzWVMREJBs9OADaPSuTq12U7Lhyd2wyymvrUv2mOXx3zLZGBIkM233rLKiTr-fM0zU4Jl1Z5bIoWKrgBreSH9i-5ZcZysQ7mzrsGZipI3GNOZHTtxaRJg6j7HFY6KxlCqI_G6JhVoZmHWWBT76kA9zF1uzIGkFzQ9DwggdV6tvD91E_6ObTrr8DiA0uADqTRz_ABhyYJM2cHzzI8XyNWJH1S977W1l6PgwgGDCvY1p=-p-df-h100-w100-rw"
+          alt="">
+      </div>
     </div>
   </div>
-  <app-news-expansion></app-news-expansion>
+  <div>
+    <div class="flex justify-between px-4">
+      <div class="flex-1 flex">
+        <div class="flex mr-2">
+          <img class="m-auto h-1/2" src="assets/images/news-icon.png" alt="">
+        </div>
+        <div class="flex">
+          <span class="m-auto color-primary">View full coverage</span>
+        </div>
+      </div>
+      <div>
+        <button mat-icon-button>
+          <mat-icon class="mat-18" (click)="collapsed=false" *ngIf="collapsed">expand_more</mat-icon>
+          <mat-icon class="mat-18" (click)="collapsed=true" *ngIf="!collapsed">expand_less</mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
 </div>
