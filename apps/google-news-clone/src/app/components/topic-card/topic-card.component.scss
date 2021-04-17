@@ -1,0 +1,14 @@
+@import '~@angular/material/theming';
+
+.topic-card-headline {
+  border: 1px solid rgb(218, 220, 224);
+  border-radius: 8px;
+  padding: 20px;
+  width: max(320px);
+  &:hover {
+    @include mat-elevation(2);
+  }
+}
+.menu-icon{
+
+}

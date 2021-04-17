@@ -1,0 +1,32 @@
+<div class="topic-card-headline cursor-pointer bg-white w-10/12">
+  <div class="flex justify-center">
+    <div class="flex h-16">
+      <div class="topic-avatar mr-5 flex">
+        <ngx-avatar size="70" cornerRadius="4" [round]="false" name="{{topicTitle.fields[2].val}}"></ngx-avatar>
+      </div>
+      <div class="m-auto text-center">
+        <span ngModel>{{topicTitle.fields[2].val}}</span>
+      </div>
+    </div>
+    <div class="menu-icon ml-5 mt-3">
+      <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <mat-icon>keyboard_arrow_down</mat-icon>
+          <span>Move towards bottom</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>vertical_align_bottom</mat-icon>
+          <span>Move to bottom</span>
+
+        </button>
+        <button mat-menu-item>
+          <mat-icon>delete</mat-icon>
+          <span>Delete</span>
+        </button>
+      </mat-menu>
+    </div>
+  </div>
+</div>

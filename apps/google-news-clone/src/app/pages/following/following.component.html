@@ -1,1 +1,75 @@
-<p>following works!</p>
+<div class="container">
+  <mat-tab-group mat-align-tabs="following-tabs bg-scroll">
+    <mat-tab label="Topic&Sources">
+      <ng-template mat-tab-label>
+        Topic&Sources
+      </ng-template>
+      <!--Tab inner body edit from here-->
+      <div class="lt-md:w-full gt-md:w-2/3">
+        <div class="flex justify-between my-8">
+          <span class="text-black text-xl">Topics</span>
+        </div>
+      </div>
+
+      <mat-divider class="flex-initial pb-5"></mat-divider>
+      <div class="grid grid-cols-3 md:grid-cols-3 mb-3">
+        <app-topic-card class="flex pt-3"></app-topic-card>
+        <app-topic-card class="flex pt-3"></app-topic-card>
+        <app-topic-card class="flex pt-3"></app-topic-card>
+        <app-topic-card class="flex pt-3"></app-topic-card>
+        <app-topic-card class="flex pt-3"></app-topic-card>
+        <app-topic-card class="flex pt-3"></app-topic-card>
+      </div>
+      <div class="lt-md:w-full gt-md:w-2/3">
+        <div class="flex justify-between my-8">
+          <span class="text-black text-xl">Local</span>
+        </div>
+      </div>
+      <mat-divider class="flex-initial"></mat-divider>
+      <div class="grid grid-cols-3 md:grid-cols-3 mb-3">
+        <app-local-card class="flex pt-3"></app-local-card>
+      </div>
+
+      <div class="lt-md:w-full gt-md:w-2/3">
+        <div class="flex justify-between my-8">
+          <span class="text-black text-xl">Sources</span>
+        </div>
+      </div>
+      <mat-divider class="flex-initial pb-3"></mat-divider>
+      <div class="save-search-border flex-col">
+        <img [src]="imgList.fields[2].val" alt="" class="saveSearchImg m-auto">
+        <div class="text-center">
+          When you follow a source, it will appear here. You'll also see more stories from that source in the 'For You' feed.
+        </div>
+      </div>
+
+    </mat-tab>
+    <!--    Topic Tab ends here   -->
+
+
+    <mat-tab label="Saved Searches">
+      <ng-template mat-tab-label>
+        Saved Searches
+      </ng-template>
+      <!--Tab inner body edit from here-->
+      <div class="save-search-border flex-col pt-3">
+        <img [src]="saveSearchImg" alt="" class="saveSearchImg m-auto">
+        <div class="text-center">
+          Your saved searches will appear here.
+        </div>
+      </div>
+    </mat-tab>
+    <mat-tab label="Saved Stories">
+      <ng-template mat-tab-label>
+        Saved Stories
+      </ng-template>
+      <!--Tab inner body edit from here-->
+      <div class="save-search-border flex-col pt-3">
+        <img [src]="imgList.fields[1].val" alt="" class="saveSearchImg m-auto">
+        <div class="text-center">
+          Your saved stories will appear here.
+        </div>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+</div>
