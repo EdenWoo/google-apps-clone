@@ -4,11 +4,11 @@
       <div class="w-5/6 pr-8">
         <app-news-sub-item></app-news-sub-item>
         <app-news-sub-item></app-news-sub-item>
-        <ng-container *ngIf="!collapsed">
+        <div *ngIf="!collapsed" @expandCollapse>
           <app-news-sub-item></app-news-sub-item>
           <app-news-sub-item></app-news-sub-item>
           <app-news-sub-item></app-news-sub-item>
-        </ng-container>
+        </div>
       </div>
       <div class="w-1/6">
         <img
