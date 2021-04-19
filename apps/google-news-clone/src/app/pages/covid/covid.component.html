@@ -1,4 +1,4 @@
-<ng-container class="covid-container" #messageContainer *ngFor="let message of conversation.messages">
+<ng-container class="covid-container" >
   <div class="flex justify-between my-8 header-container">
     <div class="header-left">
       <img
@@ -53,7 +53,8 @@
     <mat-divider class="flex-initial pb-5"></mat-divider>
     <app-top-news></app-top-news>
     <app-top-news></app-top-news>
-    <app-top-news></app-top-news>
-    <app-top-news></app-top-news>
+  </div>
+  <div class="loading-spinner mt-6 pt-6">
+    <mat-spinner color="accent" style="margin:0 auto;" class="items-baseline justify-center flex"></mat-spinner>
   </div>
 </ng-container>
