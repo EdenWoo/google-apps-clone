@@ -8527,6 +8527,13 @@ ngx-avatar@^4.1.0:
     ts-md5 "^1.2.4"
     tslib "^2.0.0"
 
+ngx-tweet@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/ngx-tweet/-/ngx-tweet-2.0.3.tgz#b55dd89f1c4b637063a355a4128989460ccc5c75"
+  integrity sha512-Vgt+QqVZwwdIGf3wo7y/Md24biYN1hrgC3w3zMw5dUa/hiv8vEodJpCeg9Vc90LTBF8ubMmEEAIbteRslhOZHQ==
+  dependencies:
+    tslib "^1.9.0"
+
 nice-try@^1.0.4:
   version "1.0.5"
   resolved "https://registry.npmjs.org/nice-try/-/nice-try-1.0.5.tgz"
