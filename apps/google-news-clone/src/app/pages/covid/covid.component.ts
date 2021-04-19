@@ -5,12 +5,10 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
   templateUrl: './covid.component.html',
   styleUrls: ['./covid.component.scss']
 })
-export class CovidComponent implements OnInit, AfterViewInit{
+export class CovidComponent implements OnInit{
   constructor() { }
 
   ngOnInit(): void {
   }
-  ngAfterViewInit() {
 
-  }
 }
