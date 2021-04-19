@@ -39,6 +39,7 @@ import { TopicCardComponent } from './components/topic-card/topic-card.component
 import { CovidComponent } from './pages/covid/covid.component';
 import { LocalCardComponent } from './components/local-card/local-card.component';
 import { TopNewsComponent } from './components/top-news/top-news.component';
+import { NgxTweetModule } from "ngx-tweet";
 
 @NgModule({
   declarations: [
@@ -63,29 +64,30 @@ import { TopNewsComponent } from './components/top-news/top-news.component';
     LocalCardComponent,
     TopNewsComponent,
   ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    BrowserAnimationsModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatListModule,
-    MatButtonModule,
-    AppRoutingModule,
-    MatToolbarModule,
-    MatCardModule,
-    MatMenuModule,
-    ReactiveFormsModule,
-    MatAutocompleteModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatExpansionModule,
-    MatSlideToggleModule,
-    MatTabsModule,
-    MatDividerModule,
-    HttpClientModule,
-    AvatarModule,
-  ],
+    imports: [
+        BrowserModule,
+        FormsModule,
+        BrowserAnimationsModule,
+        MatSidenavModule,
+        MatIconModule,
+        MatListModule,
+        MatButtonModule,
+        AppRoutingModule,
+        MatToolbarModule,
+        MatCardModule,
+        MatMenuModule,
+        ReactiveFormsModule,
+        MatAutocompleteModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatExpansionModule,
+        MatSlideToggleModule,
+        MatTabsModule,
+        MatDividerModule,
+        HttpClientModule,
+        AvatarModule,
+        NgxTweetModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
