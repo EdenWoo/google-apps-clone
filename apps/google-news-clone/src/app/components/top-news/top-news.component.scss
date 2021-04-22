@@ -1,0 +1,12 @@
+@import '~@angular/material/theming';
+
+.header-line {
+  border: 1px solid rgb(218, 220, 224);
+  border-radius: 8px;
+  padding: 20px;
+  //width: 550px;
+}
+
+//&:hover {
+//  @include mat-elevation(4);
+//}

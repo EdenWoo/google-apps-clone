@@ -8519,6 +8519,21 @@ next-tick@~1.0.0:
   resolved "https://registry.npmjs.org/next-tick/-/next-tick-1.0.0.tgz"
   integrity sha1-yobR/ogoFpsBICCOPchCS524NCw=
 
+ngx-avatar@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/ngx-avatar/-/ngx-avatar-4.1.0.tgz#f3f4b47b7490cdb83d1bfffd535c199c15559307"
+  integrity sha512-0cIaCYOeY7tNsr9Zdg7SmgVG3Yka5mQDvYboybjP4yF47o2XO/rvkRaY98N5wtRF8FL9+OzLXfHbrvYGDGEomQ==
+  dependencies:
+    ts-md5 "^1.2.4"
+    tslib "^2.0.0"
+
+ngx-tweet@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/ngx-tweet/-/ngx-tweet-2.0.3.tgz#b55dd89f1c4b637063a355a4128989460ccc5c75"
+  integrity sha512-Vgt+QqVZwwdIGf3wo7y/Md24biYN1hrgC3w3zMw5dUa/hiv8vEodJpCeg9Vc90LTBF8ubMmEEAIbteRslhOZHQ==
+  dependencies:
+    tslib "^1.9.0"
+
 nice-try@^1.0.4:
   version "1.0.5"
   resolved "https://registry.npmjs.org/nice-try/-/nice-try-1.0.5.tgz"
@@ -11787,6 +11802,11 @@ ts-loader@5.4.5:
     loader-utils "^1.0.2"
     micromatch "^3.1.4"
     semver "^5.0.1"
+
+ts-md5@^1.2.4:
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/ts-md5/-/ts-md5-1.2.7.tgz#b76471fc2fd38f0502441f6c3b9494ed04537401"
+  integrity sha512-emODogvKGWi1KO1l9c6YxLMBn6CEH3VrH5mVPIyOtxBG52BvV4jP3GWz6bOZCz61nLgBc3ffQYE4+EHfCD+V7w==
 
 ts-node@~8.3.0:
   version "8.3.0"

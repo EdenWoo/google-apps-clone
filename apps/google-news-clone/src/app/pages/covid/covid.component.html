@@ -1,0 +1,60 @@
+<ng-container class="covid-container" >
+  <div class="flex justify-between my-8 header-container">
+    <div class="header-left">
+      <img
+        src="https://lh3.googleusercontent.com/0HzdNrFxnZLcez8TVLpRlxBEuvkpPmY6KfD4SrqlOu-8d_esel6cKupKnNL6T8Svo5WddCIBew=p-rw"
+        alt="" class="header-icon">
+      <span class="text-black text-3xl p-4">Coronavirus</span>
+    </div>
+    <!--  header Left component end-->
+    <div class="header-right text-center h-8">
+    <span class="">
+    <button
+      mat-raised-button>
+        <mat-icon class="header-right-icon">star_border</mat-icon>
+        <span class="text-sm">Follow</span>
+    </button>
+    </span>
+
+      <span class="pl-4">
+    <button
+      mat-raised-button>
+       <mat-icon class="header-right-icon">share</mat-icon>
+       <span class="text-sm">Share</span>
+    </button>
+  </span>
+    </div>
+    <!--Header right component end here-->
+  </div>
+  <div class="overall-contents">
+    <div class="top-content">
+      <app-top-news></app-top-news>
+    </div>
+  </div>
+  <div class="for-twitter">
+    <h2 class="pt-5">
+      From Twitter
+    </h2>
+    <mat-divider class="flex-initial pb-5"></mat-divider>
+    <div class="grid-cols-2 grid-flow-col">
+      <ngx-tweet tweetId="1382913128963317763"></ngx-tweet>
+      <ngx-tweet tweetId="1383605186975866885"></ngx-tweet>
+      <ngx-tweet tweetId="1382573204011552769"></ngx-tweet>
+      <ngx-tweet tweetId="1382476927726800898"></ngx-tweet>
+    </div>
+    <mat-divider class="flex-initial pb-5"></mat-divider>
+    <div class="tweet-redirect text-sm text-center">
+      <a href="https://twitter.com/i/events/1243034670763094016" target="_blank" style="color: #1a73e8" >View on Twitter →</a>
+    </div>
+  </div>
+
+  <div class="more-news">
+    <h2>More news</h2>
+    <mat-divider class="flex-initial pb-5"></mat-divider>
+    <app-top-news></app-top-news>
+    <app-top-news></app-top-news>
+  </div>
+  <div class="loading-spinner mt-6 pt-6">
+    <mat-spinner color="accent" style="margin:0 auto;" class="items-baseline justify-center flex"></mat-spinner>
+  </div>
+</ng-container>
